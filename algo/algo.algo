@@ -1,0 +1,22 @@
+ALGORITHM gomycode
+VAR
+    
+    lettre: CHAR
+    gedechminkilma:INTEGER=0
+    gedechmin7arf:INTEGER=0
+    gedechminvoyelle:INTEGER=0
+BEGIN
+    WHILE (c <> '.') DO
+        Read lettre;
+        gedechmin7arf:=gedechmin7arf+1
+        IF (lettre="a" OR lettre="e" OR lettre="y" OR lettre="u" OR lettre="i" OR lettre="o") THEN
+            gedechminvoyelle:=gedechminvoyelle:+1
+        END_IF
+        IF (lettre=' ') THEN
+            gedechminkilma:=gedechminkilma+1
+        END_IF
+    END_WHILE
+    Write("gedech min 7arf ",gedechmin7arf);
+    Write("gedech min voyelle",gedechminvoyelle);
+    Write("gedech min kilma ",gedechminkilma);
+END
